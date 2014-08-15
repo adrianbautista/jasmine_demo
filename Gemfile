@@ -16,6 +16,7 @@ end
 # NON-DEFAULT GEMS
 
 gem 'thin'
+gem 'hogan_assets'
 
 group :development, :test do
   gem 'jasmine'

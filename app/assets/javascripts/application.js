@@ -1,7 +1,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
 //= require backbone
 //= require backbone-validation
-//= require hogan-3.0.1
+//= require hogan
 //= require_tree .
