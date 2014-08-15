@@ -13,7 +13,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# NEW GEMS
+# NON-DEFAULT GEMS
+
+gem 'thin'
 
 group :development, :test do
   gem 'jasmine'
