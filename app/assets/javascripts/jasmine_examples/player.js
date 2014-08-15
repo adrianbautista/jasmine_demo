@@ -21,3 +21,12 @@ Player.prototype.resume = function() {
 Player.prototype.makeFavorite = function() {
   this.currentlyPlayingSong.persistFavoriteStatus(true);
 };
+
+Player.prototype.getSpotifyDetails = function(song_name, callback) {
+  $.ajax({
+    type: 'GET',
+    url: '/api/details/' + song_name,
+    dataType: 'json',
+    success: callback
+  });
+}

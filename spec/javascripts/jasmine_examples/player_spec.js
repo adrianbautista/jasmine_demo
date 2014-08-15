@@ -40,4 +40,11 @@ describe("Player", function() {
       });
     });
   });
+
+  describe("when it gets Spotify details through an API", function() {
+    it("executes the callback on success", function() {
+      pending();
+      // hint: spies can delegate to a fake function when called
+    });
+  });
 });
