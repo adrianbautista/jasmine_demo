@@ -13,6 +13,9 @@ This is a demo using Jasmine for JavaScript testing. Don't forget your semicolon
 3. `cp config/database.yml.example config/database.yml`
 4. Update `database.yml` with your own database credentials
 5. `rake db:create`
-5. `rails s`
 6. Profit.
 
+Now you can run the Jasmine specs using:
+```shell
+rake jasmine
+```
