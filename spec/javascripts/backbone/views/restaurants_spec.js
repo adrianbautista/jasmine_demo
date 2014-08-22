@@ -1,5 +1,5 @@
 describe("Restaurants view", function() {
-  restaurants_data = [
+  var restaurants_data = [
     {
       id: 0,
       name: 'Ritz',
@@ -23,12 +23,24 @@ describe("Restaurants view", function() {
   // hint: try loading an HTML fixture and selecting a table using jQuery
   // hint2: use 'this' to persist objects throughout the specs
 
+  // var htmlFixture = loadFixtures('index.html');
+  var htmlFixture = $('<table>');
+
+  beforeEach(function() {
+    this.restaurants = new Gourmet.Collections.Restaurants(restaurants_data)
+    this.restaurantsView = new Gourmet.Views.RestaurantsView({
+      collection: this.restaurants,
+      el: htmlFixture
+    });
+  });
+
   it("is defined", function() {
     pending();
   });
 
   it("assigns the right element", function() {
-    pending();
+    var table = $('<table>');
+    expect(this.restaurantsView.el).toEqual(table);
   });
 
   it("assigns the right collection", function() {

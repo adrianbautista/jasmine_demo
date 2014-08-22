@@ -23,7 +23,7 @@ Player.prototype.makeFavorite = function() {
 };
 
 Player.prototype.getSpotifyDetails = function(song_name, callback) {
-  $.ajax({
+  jQuery.ajax({
     type: 'GET',
     url: '/api/details/' + song_name,
     dataType: 'json',

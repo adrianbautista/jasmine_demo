@@ -1,12 +1,13 @@
 describe("Restaurant Model", function() {
   it("is defined", function() {
-    pending();
+    expect(Gourmet.Models.Restaurant).toBeDefined();
   });
 
   describe("Attributes", function() {
 
     it("has default attributes", function() {
-      pending();
+      var myRestaurant = new Gourmet.Models.Restaurant();
+      expect(myRestaurant.attributes.name).toBeDefined();
     });
   });
 
